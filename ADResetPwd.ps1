@@ -19,6 +19,7 @@ wmic UserAccount get Name > UserList.txt
 $users = Get-Content -Path c:\UserList.txt
  
 ForEach ($user in $users) 
+{
  If ($user -eq "Name") {
    false
  }  Else {
