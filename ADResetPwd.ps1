@@ -12,7 +12,7 @@ Import-Module ActiveDirectory
 $password = ConvertTo-SecureString -AsPlainText “AwesomeP@ssw0rd” -Force 
  
 #Generate list of users
-wmic UserAccount get Name > UserList.txt
+wmic UserAccount get Name > c:\UserList.txt
 
 # Get the list of accounts from the file on file
 # List the user names one per line
